@@ -1,4 +1,4 @@
-import L from 'leaflet';
+import * as L from 'ale-leaflet';
 import FreeDraw, { NONE, CREATE, EDIT, DELETE, APPEND, ALL, polygons } from '../../src/FreeDraw';
 import { module } from 'angular';
 

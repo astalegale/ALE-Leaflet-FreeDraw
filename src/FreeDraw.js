@@ -1,4 +1,4 @@
-import { FeatureGroup, Point } from 'leaflet';
+import { FeatureGroup, Point } from 'ale-leaflet';
 import { select } from 'd3-selection';
 import { line, curveMonotoneX } from 'd3-shape';
 import Set from 'es6-set';

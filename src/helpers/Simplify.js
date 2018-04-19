@@ -1,4 +1,4 @@
-import { Point } from 'leaflet';
+import { Point } from 'ale-leaflet';
 import { Clipper, PolyFillType } from 'clipper-lib';
 
 /**

@@ -1,11 +1,11 @@
 module.exports = {
     entry: './src/FreeDraw.js',
     output: {
-        filename: './dist/leaflet-freedraw.cjs.js',
+        filename: './dist/ale-leaflet-freedraw.cjs.js',
         libraryTarget: 'commonjs2'
     },
     externals: {
-        leaflet: 'leaflet',
+        leaflet: 'ale-leaflet',
         'clipper-lib': 'clipper-lib',
         ramda: 'ramda'
     },

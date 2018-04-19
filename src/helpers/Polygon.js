@@ -1,4 +1,4 @@
-import { LineUtil, Point, Polygon, DomEvent } from 'leaflet';
+import { LineUtil, Point, Polygon, DomEvent } from 'ale-leaflet';
 import { defaultOptions, edgesKey, modesKey, polygons } from '../FreeDraw';
 import { updateFor } from './Layer';
 import createEdges from './Edges';

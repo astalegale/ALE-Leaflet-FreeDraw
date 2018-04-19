@@ -1,6 +1,10 @@
 <img src="example/media/logo.png" width="400" />
 
-> FreeDraw allows the free-hand drawing of shapes on your Leaflet.js map layer &ndash; providing an intuitive and familiar UX for creating geospatial boundaries similar to [Zoopla](http://www.zoopla.co.uk/for-sale/map/property/london/?include_retirement_homes=true&include_shared_ownership=true&new_homes=include&q=London&results_sort=newest_listings&search_source=home&pn=1&view_type=map) and others. Included out-of-the-box is the [concaving of polygons](http://ubicomp.algoritmi.uminho.pt/local/concavehull.html), polygon merging and simplifying, as well as the ability to add edges and modify existing shapes.
+> 
+---------------------
+#### BASED ON ALE-LEAFLET (FORK OF LEAFLET)
+---------------------
+FreeDraw allows the free-hand drawing of shapes on your Leaflet.js map layer &ndash; providing an intuitive and familiar UX for creating geospatial boundaries similar to [Zoopla](http://www.zoopla.co.uk/for-sale/map/property/london/?include_retirement_homes=true&include_shared_ownership=true&new_homes=include&q=London&results_sort=newest_listings&search_source=home&pn=1&view_type=map) and others. Included out-of-the-box is the [concaving of polygons](http://ubicomp.algoritmi.uminho.pt/local/concavehull.html), polygon merging and simplifying, as well as the ability to add edges and modify existing shapes.
 > **Note:** For drawing polylines instead, try [`L.Pather`](https://github.com/Wildhoney/L.Pather).
 
 ![Travis](http://img.shields.io/travis/Wildhoney/Leaflet.FreeDraw.svg?style=flat-square)
@@ -10,10 +14,6 @@
 ![Bower](https://img.shields.io/bower/v/bootstrap.svg?style=flat-square)
 &nbsp;
 ![MIT License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat-square)
-
-* **npm:** `npm i leaflet-freedraw`
-* **Bower:** `bower i leaflet-freedraw`
-* **JSFiddle:** https://jsfiddle.net/t6e48rm5/
 
 ## Table of Contents
 
@@ -37,8 +37,8 @@
 `FreeDraw` functions as a standard Leaflet module, meaning you initialise it and add it to your map layer via the `addLayer` function on your map instance &ndash; when you instantiate `FreeDraw` you can pass a set of [`options`](#passing-options) for behaviour customisation.
 
 ```javascript
-import L from 'leaflet';
-import FreeDraw from 'leaflet-freedraw';
+import L from 'ale-leaflet';
+import FreeDraw from 'ale-leaflet-freedraw';
 
 const map = new L.Map(node);
 const freeDraw = new FreeDraw();
@@ -67,8 +67,8 @@ Once you have received the latitude and longitude values the next step would lik
 By default the mode is `ALL` which means all actions can be performed on the `FreeDraw` layer &mdash; create, edit, delete, and append &mdash; you're able to modify the mode at any time by using the `mode` method, or upon instantiation by passing an object as the first argument.
 
 ```javascript
-import L from 'leaflet';
-import FreeDraw, { CREATE, EDIT } from 'leaflet-freedraw';
+import L from 'ale-leaflet';
+import FreeDraw, { CREATE, EDIT } from 'ale-leaflet-freedraw';
 
 const map = new L.Map(node);
 const freeDraw = new FreeDraw({
@@ -147,8 +147,8 @@ With the instance of `freeDraw` there are certain methods for manipulating `Free
 When using the `create` method to create polygons from an array of latitude and longitude values, the `CREATE` mode is disregarded, which means it doesn't need to be enabled to `create` to succeed &ndash; if you would like such behaviour then you could simply assert that `CREATE` is enabled.
 
 ```javascript
-import L, { LatLng } from 'leaflet';
-import FreeDraw from 'leaflet-freedraw';
+import L, { LatLng } from 'ale-leaflet';
+import FreeDraw from 'ale-leaflet-freedraw';
 
 const map = new L.Map(node);
 const freeDraw = new FreeDraw();

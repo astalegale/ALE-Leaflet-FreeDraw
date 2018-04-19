@@ -1,4 +1,4 @@
-import { Point } from 'leaflet';
+import { Point } from 'ale-leaflet';
 import { flatten, identical, complement, compose, head } from 'ramda';
 import { Clipper, PolyFillType } from 'clipper-lib';
 import createPolygon from 'turf-polygon';

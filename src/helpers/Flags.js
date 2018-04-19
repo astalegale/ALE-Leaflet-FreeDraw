@@ -1,4 +1,4 @@
-import { DomUtil } from 'leaflet';
+import { DomUtil } from 'ale-leaflet';
 import { edgesKey, modesKey, instanceKey, notifyDeferredKey, polygons } from '../FreeDraw';
 import { classesFor } from './Layer';
 

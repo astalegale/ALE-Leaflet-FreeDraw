@@ -1,4 +1,4 @@
-import { DivIcon, Marker, DomEvent } from 'leaflet';
+import { DivIcon, Marker, DomEvent } from 'ale-leaflet';
 import { polygons, modesKey, notifyDeferredKey } from '../FreeDraw';
 import { updateFor } from './Layer';
 import { CREATE, EDIT } from './Flags';
